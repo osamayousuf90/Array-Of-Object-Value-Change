@@ -18,6 +18,18 @@ export default function App() {
     });
     setMyArray(updatedArray);
   };
+  
+  
+  
+//   this is also another way
+  const handleValuesKid = (index, e) => {
+
+    const { name, value } = e.target;
+    const list = [...info2];
+    list[index][name] = value;
+    setInfo2(list);
+  }
+
 
   console.log("myArray ===>", myArray)
   return (
